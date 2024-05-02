@@ -36,10 +36,12 @@
                     <div class="input-container">
                         <div class="input-container">
                             <div class="cont-email">
-                                <input type="text" id="email-login" placeholder="Ingresa tu email" name="email" >
+                                <input type="text" id="email-login" placeholder="example@example.com" name="email" >
                                 <label for="email-login">Email</label>
                                 <div class="alert">
-                                    <p class="error-input" id="email-compare1" style="display: none;">El email es invalido debe contener @ y .com.</p>
+                                    <p class="error-input" id="email-compare1" style="display: none;">
+                                        <i class="fas fa-times" style="color: red;"></i> Formato de email invalido.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +51,9 @@
                                 <label for="password-login">Contraseña</label>
                                 <i class="fas fa-eye password-toggle" id="password-toggle-login" onclick="passwordVisibility('password-login', 'password-toggle-login')"></i>
                                 <div class="alert">
-                                    <p class="error-input" id="password-length-login" style="display: none;">Debe contener al menos 8 caracteres.</p>
+                                    <p class="error-input" id="password-length-login" style="display: none;">
+                                        <i class="fas fa-times" style="color: red;"></i> 8 caracteres mínimos y no poseer espacios en blanco.
+                                    </p>
                                 </div>
                             </div>
     

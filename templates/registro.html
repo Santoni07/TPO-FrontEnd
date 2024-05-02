@@ -36,14 +36,19 @@
                 <input type="text" id="user-name" placeholder="Ingresa tu Nombre" name="name" onblur="validateRequiredInput(this, 'name-compare-register')">
                 <label for="user-name">Nombre</label>
                 <div class="alert">
-                    <p class="error-input" id="name-compare-register" style="display: none;">Por favor, ingresa tu nombre.</p>
+                    <p class="error-input" id="name-compare-register" style="display: none;">
+                      <i class="fas fa-times" style="color: red;"></i> Por favor ingresa tu nombre.
+                    </p>
                 </div>
             </div>
             <div class="input-container">
-                <input type="text" id="email-register" placeholder="Ingresa tu email" name="email" oninput="validateEmailFormat(this, 'email-compare-register')">
+                <input type="text" id="email-register" placeholder="example@example.com" name="email" oninput="validateEmailFormat(this, 'email-compare-register')">
                 <label for="email-register">Email</label>
                 <div class="alert">
-                    <p class="error-input" id="email-compare-register" style="display: none;">El email es invalido debe contener @ y .com.</p>
+                  
+                  <p class="error-input" id="email-compare-register" style="display: none;">
+                    <i class="fas fa-times" style="color: red;"></i> Formato de email invalido.
+                  </p>
                 </div>
             </div>
             <div class="input-container">
@@ -51,7 +56,9 @@
                 <label for="password-input">Contraseña</label>
                 <i class="fas fa-eye password-toggle" id="password-toggle" onclick="passwordVisibility('password-input','password-toggle')"></i>
                 <div class="alert">
-                    <p class="error-input" id="password-length-register" style="display: none;">Debe tener como mínimo 8 caracteres.</p>
+                    <p class="error-input" id="password-length-register" style="display: none;">
+                      <i class="fas fa-times" style="color: red;"></i> 8 caracteres mínimos y no poseer espacios en blanco.
+                    </p>
                 </div>
             </div>
             <div class="input-container">
@@ -59,7 +66,9 @@
                 <label for="repeat-password-input">Repetir Contraseña</label>
                 <i class="fas fa-eye password-toggle" id="repeat-password-toggle" onclick="passwordVisibility('repeat-password-input','repeat-password-toggle')"></i>
                 <div class="alert">
-                    <p class="error-input" id="password-compare" style="display: none;">Las contraseñas no son iguales.</p>
+                    <p class="error-input" id="password-compare" style="display: none;">
+                      <i class="fas fa-times" style="color: red;"></i> Las contraseñas no son iguales.
+                    </p>
                 </div>
             </div>
             <div class="register-checkbox">

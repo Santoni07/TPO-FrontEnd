@@ -630,9 +630,9 @@ border: 2px solid;
 
 box-sizing: border-box;
 border-radius: 16px;
-font-size: 16px;
+font-size: 18px;
 line-height: 24px;
-color: rgb(213, 211, 211);
+
 padding: 30px 80px 4px;
 width: 100%;
 
@@ -652,7 +652,7 @@ left: 10px;
 padding: 15px;
 color: #323030;
 pointer-events: none;
-font-size: 16px;
+font-size: 14px;
 
 transition: all 0.3s ;
 }
@@ -667,6 +667,8 @@ font-weight: bold;
   align-content: start;
 
 }
+
+  
 
 form.form-content label {
 font-size: 14px;
@@ -848,9 +850,9 @@ transform: scale(1.2);
 .alert{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: left;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .error-input {
 
