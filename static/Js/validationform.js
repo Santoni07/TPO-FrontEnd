@@ -12,11 +12,8 @@ function passwordVisibility(InputId, iconId) {
         icon.classList.add("fa-eye");
     }
 }
-
-
-
-// Función genérica para validar cualquier campo de entrada que no esté vacío
-function validateRequiredInput(inputElement, errorMessageElementId) {
+ // Función para validar que el campo de nombre no esté vacío
+ function validateRequiredInput(inputElement, errorMessageElementId) {
     let inputValue = inputElement.value.trim();
     let errorMessageElement = document.getElementById(errorMessageElementId);
     
@@ -33,12 +30,17 @@ function validateRequiredInput(inputElement, errorMessageElementId) {
     }
 }
 
+
+
+
+
 // Función genérica para validar el formato de un correo electrónico
 function validateEmailFormat(emailInput, errorMessageElementId) {
     let emailValue = emailInput.value;
     let errorMessageElement = document.getElementById(errorMessageElementId);
-
-    if(emailValue.includes("@") && emailValue.includes(".com")) { // expresion regular 
+    // Expresión regular para validar el formato de correo electrónico
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(emailRegex.test(emailValue)) { // expresion regular 
         emailInput.style.borderColor = "black";
         errorMessageElement.style.display = "none";
         emailInput.classList.add("valid-input");
@@ -52,10 +54,24 @@ function validateEmailFormat(emailInput, errorMessageElementId) {
 }
 
 // Función genérica para validar la longitud de una contraseña
+
 function validatePasswordLength(passwordInput, minLength, errorMessageElementId) {
+    let password = passwordInput.value.trim(); // Elimina espacios en blanco al inicio y al final
     let passwordLengthMessage = document.getElementById(errorMessageElementId);
     
-    if (passwordInput.value.length < minLength) {
+    // Verifica la longitud mínima
+    if (password.length < minLength) {
+        passwordLengthMessage.style.display = "block";
+        passwordInput.style.borderColor = "#d32f2f";
+        passwordInput.classList.remove("valid-input");
+        return false;
+    } 
+    // Verifica si hay espacios en blanco
+    else if (/\s/.test(password)) {
+        // Si encuentra espacios en blanco
+        // Muestra un mensaje de error o realiza alguna acción adicional
+        // Aquí, estoy simplemente cambiando el borde y devolviendo false
+       
         passwordLengthMessage.style.display = "block";
         passwordInput.style.borderColor = "#d32f2f";
         passwordInput.classList.remove("valid-input");
