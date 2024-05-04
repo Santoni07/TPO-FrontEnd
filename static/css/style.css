@@ -1005,10 +1005,9 @@ transform: scale(1.2);
 .card-medic img{
     width: 45%;
     height: auto;
-    display: block; /* Asegura que la imagen se comporte como un bloque */
+    display: block; 
     
-    margin-left: auto; /* Centra la imagen en el lado izquierdo */
-    margin-right: auto; /* Centra la imagen en el lado derecho */
+    margin-left: auto; 
     height: auto;
 }
 .card img {
