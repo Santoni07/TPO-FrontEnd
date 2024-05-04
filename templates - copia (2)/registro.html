@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/style.css">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e4e93b905.js" crossorigin="anonymous"></script>
+
+  <title>Formulario de Registro</title>
+
+</head>
+
+<body  class="login">
+  <div class="main-container">
+    
+    <div class="left">
+      <div class="logo-lg">
+        <a href="../index.html">
+          <img src="../static/images/Logo-Home.png" alt="logo" width="150px">
+        </a>
+
+      </div>
+      <div class="title">
+        <h1>Registrate</h1>
+      </div>
+      <form class="form-login" action="" id="registro-formulario" method="get">
+        <div class="input-container">
+            <div class="input-container">
+                <input type="text" id="user-name" placeholder="Ingresa tu Nombre" name="name" onblur="validateRequiredInput(this, 'name-compare-register')">
+                <label for="user-name">Nombre</label>
+                <div class="alert">
+                    <p class="error-input" id="name-compare-register" style="display: none;">
+                      <i class="fas fa-times" style="color: red;"></i> Por favor ingresa tu nombre.
+                    </p>
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="email-register" placeholder="example@example.com" name="email" oninput="validateEmailFormat(this, 'email-compare-register')">
+                <label for="email-register">Email</label>
+                <div class="alert">
+                  
+                  <p class="error-input" id="email-compare-register" style="display: none;">
+                    <i class="fas fa-times" style="color: red;"></i> Formato de email invalido.
+                  </p>
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password-input" placeholder="Ingresa tu contraseña" name="psw" oninput="validatePasswordLength(this, 8, 'password-length-register')">
+                <label for="password-input">Contraseña</label>
+                <i class="fas fa-eye password-toggle" id="password-toggle" onclick="passwordVisibility('password-input','password-toggle')"></i>
+                <div class="alert">
+                    <p class="error-input" id="password-length-register" style="display: none;">
+                      <i class="fas fa-times" style="color: red;"></i> 8 caracteres mínimos y no poseer espacios en blanco.
+                    </p>
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="password" id="repeat-password-input" placeholder="Repite tu contraseña" name="repeat-psw" oninput="validatePasswordMatch(document.getElementById('password-input'), this, 'password-compare')">
+                <label for="repeat-password-input">Repetir Contraseña</label>
+                <i class="fas fa-eye password-toggle" id="repeat-password-toggle" onclick="passwordVisibility('repeat-password-input','repeat-password-toggle')"></i>
+                <div class="alert">
+                    <p class="error-input" id="password-compare" style="display: none;">
+                      <i class="fas fa-times" style="color: red;"></i> Las contraseñas no son iguales.
+                    </p>
+                </div>
+            </div>
+            <div class="register-checkbox">
+                <input type="checkbox" id="terms-checkbox" class="custom-checkbox" required>
+                <p>Acepto términos y condiciones</p>
+            </div>
+            <div class="btn">
+                <button type="submit" class="btn-login">Regístrate</button>
+            </div>
+        </div>
+    </form>
+
+
+      <div class="container-sesion">
+        <p>
+          ¿Ya tenes cuenta?
+          <a href="login.html">Inicia Sesion</a>
+        </p>
+
+          <hr >
+       
+        <div class="condicion">
+          <div class="condicion-content">
+            <a href="">Términos y condiciones</a>
+            <a href="">Preguntas frecuentes</a>
+            <a href="">
+              
+              ¿Necesitas Ayuda?
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
+
+    </div>
+    <div class="right">
+     
+    </div>
+  </div>
+
+
+
+  <!--  Scripts -->
+  <script src="../static/Js/validationform.js"></script> 
+
+</body>
+
+</html>
