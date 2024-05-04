@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./static/images/Logo-home-icono.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e4e93b905.js" crossorigin="anonymous"></script>
-    <title>Obra Social</title>
+    <title>planes.html</title>
+
+
 </head>
 
 <body>
 
     <header class="header">
         <div class="logo">
-            <a href="">
-                <img src="./static/images/Logo-Home.png" alt="logo">
+            <a href="../index.html">
+                <img src="../static/images/Logo-Home.png" alt="logo">
             </a>
             <div class="social-media">
                 <h1>Obra Social</h1>
@@ -65,61 +67,76 @@
                         <input type="text" required placeholder="Buscar...">
                     </div>
                 </li>
-                <li><a href="./templates/planes.html">PLANES DE SALUD
+                <li>
+                
+                </li>
+                 <li><a href="../templates/planes.html">PLANES DE SALUD
                         <i class="fa-solid fa-plus fa-fw" style="color: #63E6BE;"></i>
-                    </a></li>
-                <li><a href="./templates/DondeEstamos.html">DÓNDE ESTAMOS
+                    </a></li> 
+                 <li><a href="../templates/DondeEstamos.html">DÓNDE ESTAMOS
                         <i class="fa-solid fa-location-dot fa-fw" style="color: #c51616;"></i>
-                    </a></li>
+                    </a></li> 
+                 
 
-                <li><a href="templates/login.html" id="register">Acceder
+                <li><a href="../templates/login.html" id="register">Acceder
                         <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
                     </a></li>
-                <li><a href="" id="m-register">Médicos
+                 <li><a href="..//templates/medicos.html" id="m-register">Médicos
                         <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
                     </a></li>
+                 
             </ul>
         </nav>
     </header>
 
-    <script src="./static/Js/main.js"></script>
+    
 
     <h2 class="info-imp">URGENCIAS (011) 4444 8888 | 0810-333- 4444</h2>
-    <section class="slider-section">
-        <div class="slider-container">
-            <div id="one" class="slides">
-                <img src="./static/images/first-slide.jpg" alt="">
-                <div class="text">
-                    <h3>Vacuna Antigripal</h3>
-                    <p>A domicilio, para Socios y no Socios</p>
-                    <button class="text-btn">CONOCE MAS ACÁ</button>
-                </div>
-            </div>
-            <div id="two" class="slides">
-                <img src="./static/images/second-slide.jpg" alt="">
-                <div class="text">
-                    <h3>Apto Fisico Escolar</h3>
-                    <p>A domicilio, para Socios y no Socios</p>
-                    <button class="text-btn">CONOCE MAS ACÁ</button>
-                </div>
-            </div>
-            <div id="three" class="slides">
-                <img src="./static/images/third-slide.jpg" alt="">
-                <div class="text">
-                    <h3>Odontología</h3>
-                    <p>Contratá Nuestros Servicios Especiales</p>
-                    <button class="text-btn">CONOCE MAS ACÁ</button>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="card">
+                <img src="../static/images/consulta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Plan Vital+</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis
+                        veritatis eligendi aspernatur repellat delectus voluptatibus laboriosam fuga animi
+                        facilis similique, incidunt expedita placeat deserunt recusandae iste! Amet, dolorum
+                        iusto.</p><br>
+                    <a href="#" class="btn-primary" id="openModalBtn1">Detalles Plan Básico</a>
                 </div>
             </div>
         </div>
-        <div class="slider-nav">
-            <a href="#one"></a>
-            <a href="#two"></a>
-            <a href="#three"></a>
+    
+        <div class="grid-item">
+            <div class="card">
+                <img src="../static/images/osculta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Plan Esencial</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis
+                        veritatis eligendi aspernatur repellat delectus voluptatibus laboriosam fuga animi
+                        facilis similique, incidunt expedita placeat deserunt recusandae iste! Amet, dolorum
+                        iusto.</p><br>
+                    <a href="#" class="btn-primary" id="openModalBtn2">Detalles Plan Estándar</a>
+                </div>
+            </div>
         </div>
-    </section>
-
-
+    
+        <div class="grid-item">
+            <div class="card">
+                <img src="../static/images/pediatria.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Plan Premium</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis
+                        veritatis eligendi aspernatur repellat delectus voluptatibus laboriosam fuga animi
+                        facilis similique, incidunt expedita placeat deserunt recusandae iste! Amet, dolorum
+                        iusto.</p><br>
+                    <a href="#" class="btn-primary" id="openModalBtn3">Detalles Plan Premium</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer class="footer">
 
         <div class="contact-me">
@@ -147,7 +164,7 @@
         </div>
 
     </footer>
-
-</body>
-
-</html>
+    <script src="../static/Js/main.js"></script>
+    </body>
+    
+    </html>
