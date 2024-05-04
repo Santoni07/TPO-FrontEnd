@@ -15,7 +15,7 @@
     <title>Obra Social</title>
 
 
-    <style>
+   <!--  <style>
       .grid-container {
         display: flex;
         flex-wrap: wrap;
@@ -77,7 +77,7 @@
     }
 
 
-    </style>
+    </style> -->
     
   </head>
 
@@ -85,108 +85,85 @@
 
     <header class="header">
       <div class="logo">
-        <a href="../index.html">
-          <img src="../static/images/Logo-Home.png" alt="logo" />
-        </a>
-        <div class="social-media">
-          <h1>Obra Social</h1>
-          <ul>
-            <li>
-              <a href="">
-                <i
-                  class="fa-brands fa-instagram fa-l"
-                  style="color: #ff0040"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i
-                  class="fa-brands fa-facebook fa-l"
-                  style="color: #1055cb"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i
-                  class="fa-brands fa-linkedin fa-l"
-                  style="color: #74c0fc"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i
-                  class="fa-regular fa-envelope fa-l"
-                  style="color: #696969"
-                ></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <a href="">
+              <img src="./static/images/Logo-Home.png" alt="logo">
+          </a>
+          <div class="social-media">
+              <h1>Obra Social</h1>
+              <ul>
+                  <li><a href="https://www.instagram.com">
+                          <i class="fa-brands fa-instagram fa-l" style="color: #ff0040;"></i>
+                      </a></li>
+                  <li><a href="https://www.facebook.com">
+                          <i class="fa-brands fa-facebook fa-l" style="color: #1055cb;"></i>
+                      </a></li>
+                  <li><a href="https://www.linkedin.com">
+                          <i class="fa-brands fa-linkedin fa-l" style="color: #74C0FC;"></i>
+                      </a></li>
+                  <li><a href="https://outlook.live.com">
+                          <i class="fa-regular fa-envelope fa-l" style="color: #696969;"></i>
+                      </a></li>
+
+              </ul>
+
+          </div>
       </div>
 
-      <button class="open-menu" id="open">
-        <i class="fas fa-bars ico" style="color: #292929"></i>
-      </button>
+
+
+      <button class="open-menu" id="open"><i class="fas fa-bars ico" style="color: #292929;"></i></button>
+
+
 
       <nav class="nav" id="nav">
         <ul class="nav-links">
-          <li>
-            <button class="close-menu" id="close">
-              <i class="fas fa-times ico" style="color: #ffffff"></i>
-            </button>
-          </li>
-          <li>
-            <div class="search">
-              <i class="fa-solid fa-magnifying-glass" style="color: black"></i>
-              <input type="text" required placeholder="Buscar..." />
-            </div>
-          </li>
-          <li></li>
-          <li>
-            <a href="../templates/planes.html"
-              >PLANES DE SALUD
-              <i class="fa-solid fa-plus fa-fw" style="color: #63e6be"></i>
-            </a>
-          </li>
-          <li>
-            <a href="../templates/donde.html"
-              >DÓNDE ESTAMOS
-              <i
-                class="fa-solid fa-location-dot fa-fw"
-                style="color: #c51616"
-              ></i>
-            </a>
-          </li>
-          <li>
-            <a href="../templates/login.html" id="register"
-              >Acceder
-              <i class="fa-solid fa-user fa-fw" style="color: #ffffff"></i>
-            </a>
-          </li>
-          <li>
-            <a href="../templates/medicos.html" id="m-register"
-              >Médicos
-              <i class="fa-solid fa-user fa-fw" style="color: #ffffff"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <script src="../static/Js/main.js"></script>
+
+
+          <li><button class="close-menu" id="close"><i class="fas fa-times ico"
+                      style="color: #ffffff;"></i></button></li>
+
+
+
+          <li>
+              <div class="search">
+                  <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                  <input type="text" required placeholder="Buscar...">
+              </div>
+          </li>
+          <li>
+          
+          </li>
+           <li><a href="../templates/planes.html">PLANES DE SALUD
+                  <i class="fa-solid fa-plus fa-fw" style="color: #63E6BE;"></i>
+              </a></li> 
+           <li><a href="../templates/DondeEstamos.html">DÓNDE ESTAMOS
+                  <i class="fa-solid fa-location-dot fa-fw" style="color: #c51616;"></i>
+              </a></li> 
+           
+
+          <li><a href="../templates/login.html" id="register">Acceder
+                  <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
+              </a></li>
+           <li><a href="..//templates/medicos.html" id="m-register">Médicos
+                  <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
+              </a></li>
+           
+      </ul>
+      </nav>
+  </header>
+
+   
 
     <h2 class="info-imp">URGENCIAS (011) 4444 8888 | 0810-333- 4444</h2> 
 
-     <h2 class="mb-4"></h2> 
+     
 
     <div class="grid-container">
       
       
       <div class="grid-item">
-          <div class="card">
+          <div class="card-medic">
               <img src="../static/images/Sigmund_Freud.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">Dr. Sigmund Freud</h5>
@@ -199,7 +176,7 @@
       </div>
   
       <div class="grid-item">
-          <div class="card">
+          <div class="card-medic">
               <img src="../static/images/hipocrates.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">Dr. Hipócrates</h5>
@@ -211,7 +188,7 @@
       </div>
   
       <div class="grid-item">
-          <div class="card">
+          <div class="card-medic">
               <img src="../static/images/lister.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">Dr. Joseph Lister</h5>
@@ -224,6 +201,33 @@
       </div>
   </div>
   
+  <footer class="footer">
+
+    <div class="contact-me">
+        <ul>
+            <li><i class="fa-solid fa-phone fa-fw" style="color: #ffffff;"></i> Asociate | 0810-555-4444</li>
+            <li><i class="fa-solid fa-phone fa-fw" style="color: #ffffff;"></i> Centro De Atencion Al Socio |
+                0810-555-4444</li>
+            <li><i class="fa-brands fa-whatsapp fa-fw" style="color: #ffffff;"></i> WhatsApp | +54 9 11-2222-3333
+            </li>
+            <li><i class="fa-solid fa-location-dot fa-fw" style="color: #ffffff;"></i> Av.Ejemplo 1124</li>
+        </ul>
+    </div>
+
+    <div class="line-center"></div>
+
+    <div class="form-box">
+        <h4>Para recibir informacion acerca de ofertas y promociones,por favor, complete el siguiente formulario:
+        </h4>
+
+        <form class="form-footer" action="#">
+            <input id="name" type="text" required placeholder="Nombre...">
+            <input id="email" type="email" required placeholder="E-mail...">
+            <button class="form-btn">SUSCRIBIRSE</button>
+        </form>
+    </div>
+
+</footer>
   <script src="../static/Js/main.js"></script>
 
 
