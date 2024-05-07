@@ -972,15 +972,25 @@ transform: scale(1.2);
      background-color: #fff;
 }
 
+
 .grid-item {
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(25% - 20px);
     margin: 10px; 
     padding: 10px;
     
    
 
 }
+.medic-title{
+    display: flex;
+    padding: 40px;
+    justify-content: left;
 
+    background-color: #fff !important;
+}
+.medic-title h1{
+    color: #280346;
+}
 .card {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -989,6 +999,8 @@ transform: scale(1.2);
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
+  
+   
    
 }
 .card-medic {
@@ -1000,26 +1012,38 @@ transform: scale(1.2);
     overflow: hidden;
     background-color: #fff;
    
+   
 }
 
-.card-medic img{
-    width: 45%;
-    height: auto;
-    display: block; 
-    
-    margin-left: auto; 
-    height: auto;
-}
+
 .card img {
     width: 100%;
     height: auto;
+    display: block; 
+    margin-right: auto;
+    margin-left:auto ; 
 
     
 }
-
-.card-body {
+.card-body-medic{
     padding: 20px;
+    display: flex;
+    align-items: center;
+} 
+.card-body{
+    padding: 20px;
+
 }
+.card-img-top {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.card-body p {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
 
 .btn-primary {
     display: block;
