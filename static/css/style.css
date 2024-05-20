@@ -1107,11 +1107,11 @@ transform: scale(1.2);
 } 
 #whatsappContacto {
        
-    display: flex; /* El contenedor de WhatsApp está oculto inicialmente */
+    display: flex; 
    
-    text-align: center; /* Centrar el contenido del contenedor */
-    background-color: transparent; /* Cambia el color de fondo según sea necesario */
-    padding: 10px; /* Añade espacio alrededor del contenido dentro del contenedor */
+    text-align: center; 
+    background-color: transparent; 
+    padding: 10px;
    
 
 }
@@ -1204,19 +1204,21 @@ transform: scale(1.2);
 
 .contenido-carta iframe {
     width: 100%;
-    height: 200px; /* Altura ajustable según tu preferencia */
+    height: 200px; 
 }
    /* *************** css para planes y medicos *************** */
-   .grid-container {
+  
+  
+ .grid-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-     background-color: #fff;
+    background-color: #fff;
 }
 
 
 .grid-item {
-    flex-basis: calc(25% - 20px);
+    flex-basis: calc(25% - 25px);
     margin: 10px; 
     padding: 10px;
     
@@ -1234,8 +1236,9 @@ transform: scale(1.2);
     color: #280346;
 }
 .card {
+    
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -1245,45 +1248,32 @@ transform: scale(1.2);
    
    
 }
-.card-medic {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-   
-   
-}
+
 
 
 .card img {
     width: 100%;
     height: auto;
-    display: block; 
-    margin-right: auto;
-    margin-left:auto ; 
+    
 
     
 }
 .card-body-medic{
     padding: 20px;
-    display: flex;
-    align-items: center;
+    min-height: 170px; 
 } 
+
 .card-body{
     padding: 20px;
 
 }
 .card-img-top {
-    width: 100%; 
-    height: auto; 
-}
-.card-body p {
-    padding: 20px;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: 100px; 
+    object-fit: cover; 
+  }
+.card-text{
+    padding-top: 10px;
 }
 
 
