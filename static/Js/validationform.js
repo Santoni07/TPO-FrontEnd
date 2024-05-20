@@ -143,3 +143,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+ // Script para la aparicion del wasap en el login 
+ document.addEventListener("DOMContentLoaded", function() {
+    var ayudaBtn = document.getElementById("ayudaBtn");
+    var whatsappContacto = document.getElementById("whatsappContacto");
+    var timeoutId; // Variable para almacenar el ID del temporizador
+
+    ayudaBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Evita que el enlace siga su comportamiento predeterminado
+
+        // Mostrar el contenedor de WhatsApp
+        whatsappContacto.style.display = "block";
+
+        // Establecer un temporizador para ocultar el contenedor después de 8 segundos
+        timeoutId = setTimeout(function() {
+            whatsappContacto.style.display = "none";
+        }, 10000); // 8 segundos
+    });
+
+    // Event listener para detectar clics en cualquier lugar de la página
+    document.addEventListener("click", function(event) {
+        // Verificar si el clic no fue dentro del contenedor de WhatsApp ni en el botón de ayuda
+        if (event.target !== ayudaBtn && event.target !== whatsappContacto) {
+            // Ocultar el contenedor de WhatsApp
+            whatsappContacto.style.display = "none";
+            // Limpiar el temporizador si está activo
+            clearTimeout(timeoutId);
+        }
+    });
+});
