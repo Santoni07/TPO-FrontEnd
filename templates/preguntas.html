@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/images/Logo-home-icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e4e93b905.js" crossorigin="anonymous"></script>
+    <title>Preguntas Frecuentes</title>
+
+
+
+
+
+</head>
+
+<body class="preguntas-frecuentes">
+
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../static/images/Logo-Home.png" alt="logo">
+            </a>
+            <div class="social-media">
+                <h1>Obra Social</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com">
+                            <i class="fa-brands fa-instagram fa-l" style="color: #ff0040;"></i>
+                        </a></li>
+                    <li><a href="https://www.facebook.com">
+                            <i class="fa-brands fa-facebook fa-l" style="color: #1055cb;"></i>
+                        </a></li>
+                    <li><a href="https://www.linkedin.com">
+                            <i class="fa-brands fa-linkedin fa-l" style="color: #74C0FC;"></i>
+                        </a></li>
+                    <li><a href="https://outlook.live.com">
+                            <i class="fa-regular fa-envelope fa-l" style="color: #696969;"></i>
+                        </a></li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <button class="open-menu" id="open"><i class="fas fa-bars ico" style="color: #292929;"></i></button>
+
+
+
+        <nav class="nav" id="nav">
+            <ul class="nav-links">
+
+
+
+                <li><button class="close-menu" id="close"><i class="fas fa-times ico"
+                            style="color: #ffffff;"></i></button></li>
+
+
+
+                <li>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                        <input type="text" required placeholder="Buscar...">
+                    </div>
+                </li>
+                <li><a href="../templates/planes.html">PLANES DE SALUD
+                        <i class="fa-solid fa-plus fa-fw" style="color: #63E6BE;"></i>
+                    </a></li>
+                <li><a href="../templates/DondeEstamos.html">DÓNDE ESTAMOS
+                        <i class="fa-solid fa-location-dot fa-fw" style="color: #c51616;"></i>
+                    </a></li>
+
+                <li><a href="../templates/login.html" id="register">Acceder
+                        <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
+                    </a></li>
+                <li><a href="../templates/medicos.html" id="m-register">Médicos
+                        <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h2 class="info-imp">URGENCIAS (011) 4444 8888 | 0810-333- 4444</h2>
+    
+    <main class="preguntas">
+
+        <h1>Preguntas Frecuentes</h1>
+        <ul id="faq-menu">
+            <li onclick="mostrarRespuesta(1)">¿Cuál es el horario de atención?</li>
+            <div id="respuesta1" class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(2)">¿Cuál es la dirección de la oficina Central?</li>
+            <div id="respuesta2" class="respuesta" style="display: none;" ></div>
+
+            <li onclick="mostrarRespuesta(3)">¿Cómo puedo contactar al servicio al cliente?</li>
+            <div id="respuesta3" class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(4)">¿Qué servicios médicos están cubiertos por la obra social?</li>
+            <div id="respuesta4"class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(5)">¿Cuál es el procedimiento para solicitar reembolsos de gastos médicos?</li>
+            <div id="respuesta5" class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(6)" >¿Cómo puedo acceder a mi historial médico en línea?</li>
+            <div id="respuesta6" class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(7)"  >¿Ofrecen atención médica de emergencia las 24 horas?</li>
+            <div id="respuesta7" class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(8)">¿Qué debo hacer si necesito encontrar un médico especialista?</li>
+            <div id="respuesta8" class="respuesta" style="display: none;"></div>
+
+            <li onclick="mostrarRespuesta(9)">¿Cuál es el proceso para solicitar autorizaciones de tratamientos médicos?</li>
+            <div id="respuesta9" class="respuesta" style="display: none;"></div>
+            
+            <li onclick="mostrarRespuesta(10)">¿Qué hacer en caso de pérdida o robo de la credencial de afiliación?</li>
+            <div id="respuesta10" class="respuesta"  style="display: none;"></div>
+        </ul>
+       
+    
+        <script>
+            let timeoutId;
+            //  lista de respuestas a las preguntas frecuentes
+            const respuestas = [
+                "Nuestro horario de atención es de lunes a viernes de 9:00 a.m. a 5:00 p.m.",
+                "Estamos ubicados en la Calle Av Ejemplo 1124 Ciudad de Buenos Aires.",
+                "Puedes contactar al servicio al cliente llamando al 0810-555-4444 o enviando un correo electrónico a info@saludObraSocial.com.",
+                "Nuestra obra social ofrece cobertura para una amplia gama de servicios médicos, que incluyen consultas médicas, estudios de laboratorio, internaciones, cirugías, tratamientos especializados, rehabilitación, y más. Para obtener información detallada sobre la cobertura, te recomendamos consultar nuestra guía de beneficios o comunicarte con nuestro servicio al cliente.",
+                "El procedimiento para solicitar reembolsos de gastos médicos varía según el tipo de servicio. Por lo general, debes completar un formulario de solicitud de reembolso y adjuntar los recibos médicos correspondientes. Esta documentación debe enviarse a nuestra oficina central para su procesamiento. Para obtener asistencia con el proceso de reembolso, no dudes en comunicarte con nuestro servicio al cliente.",
+                "Para acceder a tu historial médico en línea, puedes iniciar sesión en nuestro portal de afiliados utilizando tu nombre de usuario y contraseña. Desde allí, podrás ver tu historial de consultas médicas, resultados de exámenes, tratamientos recetados y otros registros médicos.",
+                "Sí, nuestra obra social cuenta con un servicio de atención médica de emergencia disponible las 24 horas del día, los 7 días de la semana. Puedes comunicarte con nuestro centro de atención de emergencias en caso de necesitar asistencia médica inmediata.",
+                "Si necesitas encontrar un médico especialista, puedes utilizar nuestro directorio en línea para buscar profesionales de la salud por especialidad, ubicación y otros criterios. También puedes comunicarte con nuestro servicio al cliente para recibir recomendaciones de médicos especialistas en tu área.",
+                "El proceso para solicitar autorizaciones de tratamientos médicos varía según el tipo de tratamiento y la cobertura de tu plan de salud. Por lo general, debes obtener una orden médica de tu médico tratante y luego comunicarte con nuestro departamento de autorizaciones para iniciar el proceso. Te guiaremos a través de los pasos necesarios para obtener la autorización requerida.",
+                "En caso de pérdida o robo de tu credencial de afiliación, te recomendamos que nos informes de inmediato para que podamos bloquear la tarjeta y emitirte una nueva. Puedes comunicarte con nuestro servicio al cliente para reportar la situación y solicitar una nueva credencial.",
+                
+            ];
+    
+             // Función para mostrar la respuesta correspondiente
+        function mostrarRespuesta(indice) {
+            // itero sobre la lista y oculto  todas las respuestas
+            for (let i = 0; i < respuestas.length; i++) {
+                document.getElementById(`respuesta${i+1}`).style.display = 'none';
+            }
+
+            const respuesta = document.getElementById(`respuesta${indice}`);
+            respuesta.textContent = respuestas[indice - 1]; 
+            respuesta.style.display = 'block';
+            // vuelvo a cero el contador
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+
+            // Oculto la respuesta despues de los 6 segundos
+            timeoutId = setTimeout(() => {
+                respuesta.style.display = 'none';
+            }, 6000);
+        }
+        </script>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contact-me">
+            <ul>
+                <li><i class="fa-solid fa-phone fa-fw" style="color: #ffffff;"></i> Asociate | 0810-555-4444</li>
+                <li><i class="fa-solid fa-phone fa-fw" style="color: #ffffff;"></i> Centro De Atencion Al Socio |
+                    0810-555-4444</li>
+                <li><i class="fa-brands fa-whatsapp fa-fw" style="color: #ffffff;"></i> WhatsApp | +54 9 11-2222-3333
+                </li>
+                <li><i class="fa-solid fa-location-dot fa-fw" style="color: #ffffff;"></i> Av.Ejemplo 1124</li>
+            </ul>
+        </div>
+
+        <div class="line-center"></div>
+
+        <div class="form-box">
+            <h4>Para recibir informacion acerca de ofertas y promociones,por favor, complete el siguiente formulario:
+            </h4>
+
+            <form class="form-footer" action="#">
+                <input id="name" type="text" required placeholder="Nombre...">
+                <input id="email" type="email" required placeholder="E-mail...">
+                <button class="form-btn">SUSCRIBIRSE</button>
+            </form>
+        </div>
+
+    </footer>
+    <script src="../static/Js/main.js"></script>
+</body>
+
+</html>
