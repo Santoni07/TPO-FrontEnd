@@ -1215,7 +1215,7 @@ transform: scale(1.2);
 
 
 .grid-item {
-    flex-basis: calc(25% - 25px);
+    flex: 1 1 calc(25% - 20px);
     margin: 10px; 
     padding: 10px;
     
@@ -1241,6 +1241,8 @@ transform: scale(1.2);
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
+    box-shadow: 0 0 10px #727272;
+    margin: 15px;
   
    
    
@@ -1258,7 +1260,11 @@ transform: scale(1.2);
 .card-body-medic{
     padding: 20px;
     min-height: 170px; 
+    max-height: 320px;
 } 
+.card-body-planes{
+    padding: 20px;
+}
 
 .card-body{
     padding: 20px;
@@ -1272,7 +1278,11 @@ transform: scale(1.2);
 .card-text{
     padding-top: 10px;
 }
-
+.card-body-medic,
+.card-body-planes {
+    min-height: 170px;
+    max-height: 320px;
+}
 
 .btn-primary {
     display: block;
