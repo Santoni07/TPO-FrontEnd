@@ -1443,23 +1443,26 @@ margin-left: 30px;
         grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
     }
 }
-/* CSS para preguntas Frecuentes*/
 
- .preguntas {
-    height: 100%;
+.preguntas {
+    
     color: #1055cb;
     font-size: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#F0F0F0;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #F0F0F0;
     padding: 50px;
+    box-sizing: border-box;
 }
+
 #faq-container {
     text-align: center;
+    width: 100%;
 }
+
 #faq-menu {
     display: flex;
     flex-direction: column;
@@ -1467,18 +1470,24 @@ margin-left: 30px;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    max-width: 700px;
 }
+
 #faq-menu li {
     cursor: pointer;
     margin-bottom: 10px;
-    transition: font-size 0.4s ease; 
+    transition: font-size 0.4s ease;
+    text-align: left;
 }
+
 #faq-menu li:hover {
     text-decoration: underline;
-    font-size: 22px; 
+    font-size: 22px;
 }
+
 .respuesta {
-    display: flex;
+    display: none;
     justify-content: left;
     text-align: left;
     margin-top: 20px;
@@ -1486,15 +1495,70 @@ margin-left: 30px;
     font-size: 22px;
     max-width: 100%;
     margin-bottom: 30px;
-    width: 700px;
-   
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #ffffff;
 }
 
-.preguntas h1{
+.preguntas h1 {
     padding: 40px;
-    color: rgba(41, 41, 41, 0.8);;
+    color: rgba(41, 41, 41, 0.8);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .preguntas {
+        padding: 20px;
+    }
+
+    .respuesta {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    #faq-menu li {
+        font-size: 18px;
+    }
+
+    #faq-menu li:hover {
+        font-size: 20px;
+    }
+
+    .preguntas h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preguntas {
+        padding: 10px;
+    }
+
+    .respuesta {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #faq-menu li {
+        font-size: 16px;
+    }
+
+    #faq-menu li:hover {
+        font-size: 18px;
+    }
+
+    .preguntas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
 /* CSS para politicas de privacidad */
 
 
