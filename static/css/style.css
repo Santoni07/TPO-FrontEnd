@@ -1402,44 +1402,19 @@ margin-left: 30px;
     }
 }
 /*  css para medicos */
-/* .grid-container-medico {
-    display: flex;
-    flex-wrap: nowrap; 
-    justify-content: center; 
-    background-color: #fff;
+
+ .grid-container-medico {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
-    padding: 20px;
+    background-color: #fff;
+    padding: 20px; 
 }
 
 .grid-item-medico {
-    flex: 1; 
-    max-width: 400px; 
     margin: 10px;
     padding: 10px; 
    
-   
-}
-
-.card-body-medico {
-    padding: 20px;
-  
-}
- */
- .grid-container-medico {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas equitativas */
-    gap: 20px; /* Espacio entre las tarjetas */
-    background-color: #fff;
-    padding: 20px; /* Espacio interior del contenedor */
-}
-
-.grid-item-medico {
-    margin: 10px; /* Margen alrededor de cada tarjeta */
-    padding: 10px; /* Espacio interior de cada tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-    background-color: #f9f9f9; /* Color de fondo de las tarjetas */
 }
 
 .card-body-medico {
