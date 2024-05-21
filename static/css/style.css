@@ -1215,8 +1215,8 @@ transform: scale(1.2);
 
 
 .grid-item {
-    flex: 1 1 calc(25% - 20px);
-    margin: 10px; 
+    flex: 1  calc(25% - 20px);
+    margin: 30px; 
     padding: 10px;
     
    
