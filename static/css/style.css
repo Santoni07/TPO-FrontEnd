@@ -1152,6 +1152,7 @@ transform: scale(1.2);
     font-size: 28px;
     margin: 0;
     color: rgb(2, 49, 4);
+    
 }
 
 .mainUbi p {
@@ -1226,7 +1227,7 @@ transform: scale(1.2);
 .medic-title{
     display: flex;
     padding: 40px;
-    justify-content: left;
+    justify-content: center;
 
     background-color: #fff !important;
 }
@@ -1359,6 +1360,56 @@ max-width: 200px;
 margin-top: 10px;
 }
 
+/* seccion pagos */
+.payment-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color:ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.payment-section hr {
+    border: none; 
+    border-top: 1px solid  #dfdddd; 
+    margin: 0 auto; 
+    width: 50%; 
+    margin-bottom: 20px; 
+    
+}
+
+.payment-section p {
+    color:  #535353 !important;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-section-tilte p {
+    color: #535353; /* Cambia el color del texto */
+    font-size: 32px; /* Ajusta el tamaño de la fuente según sea necesario */
+   
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+
+
+
+.btn-primary-pagos {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary-pagos:hover {
+    background-color: #0b3e99;
+}
 
 
 @media (max-width: 576px) {
@@ -1386,7 +1437,8 @@ font-size: 32px;
 
 color: rgb(2, 49, 4);
 margin-top: 30px;
-text-align: left;
+margin-bottom: 30px;
+text-align: center;
 margin-left: 30px;
 }
 
@@ -1584,5 +1636,105 @@ margin-left: 30px;
     margin-right: 40px ;
     text-align: justify;
 
+
 }
 
+/* css para Metodos de pago  */
+
+
+.ContenedorMetodos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 15px; 
+    background-color: #fff; 
+   
+    min-height: 100px;
+    padding-bottom: 60px;
+}
+
+.ContenedorMetodos .metodo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; 
+}
+
+.ContenedorMetodos img {
+    max-width: 150px; 
+    height: auto; 
+    transition: transform 0.4s; 
+    margin:20px;
+   /*  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.1); */
+    background-color: transparent;
+}
+
+.ContenedorMetodos img:hover {
+    transform: scale(1.15); 
+}
+
+ .idTitulos {
+
+padding: 20px;
+color: #000000;
+background-color: #fff;
+height: auto;
+font-weight: bolder;
+font-size: 1.25rem;
+
+
+
+}
+
+
+
+
+
+.EncabezadoMetodos h1{
+color: rgb(2, 49, 4);
+text-align: center;
+font-size: 32px;
+padding: 20px;
+
+
+}
+
+.EncabezadoMetodos p{
+font-size: 18px;
+text-align: center;
+letter-spacing: 1px; 
+padding: 10px;
+margin:10px;
+margin-bottom: 20px;
+
+}
+
+.mainMet hr {
+   
+    width: 50%; 
+    margin: 0 auto; 
+    border: none;
+    border-top: 1px solid #dfdddd; 
+}
+.EncabezadoMetodos{
+background-color:#fff;
+
+
+
+
+}
+
+
+.EncabezadoMetodos hr{
+    width: 50px; 
+    margin: 0 auto; 
+    border: 1.5px solid #030242;
+
+
+}
+
+.mainMet{
+background-color:#fff;
+
+}
