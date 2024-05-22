@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./static/images/Logo-home-icono.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/images/Logo-home-icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,61 +23,65 @@
 
 <body >
 
-    <header class="header">
+     <!-- HEADER -->
+     <header class="header">
+        <!-- CONTENEDOR DEL LOGO -->
         <div class="logo">
-            <a href="../index.html">
+            <a href="">
                 <img src="../static/images/Logo-Home.png" alt="logo">
             </a>
+            <!-- ICONOS-REDES SOCIALES DEBAJO DEL LOGO -->
             <div class="social-media">
                 <h1>Obra Social</h1>
                 <ul>
-                    <li><a href="https://www.instagram.com">
+                    <li><a href="https://www.instagram.com/">
                             <i class="fa-brands fa-instagram fa-l" style="color: #ff0040;"></i>
                         </a></li>
-                    <li><a href="https://www.facebook.com">
+                    <li><a href="https://www.facebook.com/">
                             <i class="fa-brands fa-facebook fa-l" style="color: #1055cb;"></i>
                         </a></li>
-                    <li><a href="https://www.linkedin.com">
+                    <li><a href="https://www.linkedin.com/">
                             <i class="fa-brands fa-linkedin fa-l" style="color: #74C0FC;"></i>
                         </a></li>
-                    <li><a href="https://outlook.live.com">
+                    <li><a href="https://www.gmail.com/">
                             <i class="fa-regular fa-envelope fa-l" style="color: #696969;"></i>
                         </a></li>
-
                 </ul>
 
             </div>
         </div>
-
-
-
+        <!-- INPUT-SEARCH ACTIVO HASTA LA APARICION DEL MENU HAMBURGUESA -->
+        <div class="search-navbar">
+            <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+            <input type="text" required placeholder="Buscar...">
+        </div>
+        <!-- BOTON DE DESPLIEGUE MENU-HAMBURGUESA -->
         <button class="open-menu" id="open"><i class="fas fa-bars ico" style="color: #292929;"></i></button>
+        <!--  -->
 
-
-
+        <!-- MENU DE NAVEGACION -->
         <nav class="nav" id="nav">
+
             <ul class="nav-links">
 
-
-
                 <li><button class="close-menu" id="close"><i class="fas fa-times ico"
-                            style="color: #ffffff;"></i></button></li>
-
-
-
+                            style="color: #ffffff;"></i></button>
+                </li>
+                <!-- INPUT-SEARCH ACTIVO CON EL MENU HAMBURGUESA -->
                 <li>
-                    <div class="search">
+                    <div class="search-menu">
                         <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
                         <input type="text" required placeholder="Buscar...">
                     </div>
                 </li>
+                <!--  -->
                 <li><a href="../templates/planes.html">PLANES DE SALUD
                         <i class="fa-solid fa-plus fa-fw" style="color: #63E6BE;"></i>
                     </a></li>
                 <li><a href="../templates/DondeEstamos.html">DÓNDE ESTAMOS
                         <i class="fa-solid fa-location-dot fa-fw" style="color: #c51616;"></i>
                     </a></li>
-
+                    
                 <li><a href="../templates/login.html" id="register">Acceder
                         <i class="fa-solid fa-user fa-fw" style="color: #ffffff;"></i>
                     </a></li>
@@ -86,7 +90,11 @@
                     </a></li>
             </ul>
         </nav>
+
     </header>
+    <!-- SCRIPT PARA ABRIR Y CERRAR MENU HAMBURGUESA -->
+    <script src="./static/Js/main.js"></script>
+    <!--  -->
 
 
     <h2 class="info-imp">URGENCIAS (011) 4444 8888 | 0810-333- 4444</h2>
