@@ -1622,9 +1622,10 @@ margin-left: 30px;
 }
 /* CSS para politicas de privacidad */
 
-.preguntas-tilte{
+.preguntas-tilte h2{
     
-    color: #292929;
+    font-size: 45px;
+    color: #292929 !;
     text-align: center;
     padding: 40px;
 }
