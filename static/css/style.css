@@ -1466,6 +1466,7 @@ margin-left: 30px;
     gap: 20px; 
     background-color: #fff;
     padding: 20px; 
+    min-width: 250px
 }
 
 .grid-item-medico {
