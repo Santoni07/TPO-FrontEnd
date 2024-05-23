@@ -1471,10 +1471,10 @@ margin-left: 30px;
 .grid-item-medico {
     margin: 10px;
     padding: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-    background-color: #f9f9f9; /* Color de fondo de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: #f9f9f9; 
 }
 
 .card-body-medico {
@@ -1485,7 +1485,7 @@ margin-left: 30px;
 .card-body-medico p{
     margin-top: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .grid-container-medico {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
     }
