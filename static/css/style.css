@@ -830,12 +830,15 @@ body.login {
 
 .logo-lg {
     display: flex;
-    width: 50px; /* Cambia este valor al tamaño deseado */
-    height: auto; /* Esto asegura que la proporción del logo se mantenga */
+   
     justify-content: center;
     transition: all 0.3s ease;
     
   }
+.logo-lg img{
+    width: 200px; 
+    height: auto; 
+}
 
 .logo-lg img:hover {
     transform: scale(1.2);
