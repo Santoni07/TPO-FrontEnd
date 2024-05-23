@@ -1622,14 +1622,13 @@ margin-left: 30px;
 }
 /* CSS para politicas de privacidad */
 
-
-.politica-content h1{
-  
+.preguntas-tilte{
     
     color: #292929;
     text-align: center;
     padding: 40px;
 }
+
 .politica-content h2{
     display: flex;
     justify-content: left;
