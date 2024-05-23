@@ -105,34 +105,34 @@
         <h1>Preguntas Frecuentes</h1>
         <ul id="faq-menu">
             <li onclick="mostrarRespuesta(1)">¿Cuál es el horario de atención?</li>
-            <div id="respuesta1" class="respuesta" style="display: none;"></div>
+            <li id="respuesta1" class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(2)">¿Cuál es la dirección de la oficina Central?</li>
-            <div id="respuesta2" class="respuesta" style="display: none;" ></div>
+            <li id="respuesta2" class="respuesta" style="display: none;" ></li>
 
             <li onclick="mostrarRespuesta(3)">¿Cómo puedo contactar al servicio al cliente?</li>
-            <div id="respuesta3" class="respuesta" style="display: none;"></div>
+            <li id="respuesta3" class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(4)">¿Qué servicios médicos están cubiertos por la obra social?</li>
-            <div id="respuesta4"class="respuesta" style="display: none;"></div>
+            <li id="respuesta4"class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(5)">¿Cuál es el procedimiento para solicitar reembolsos de gastos médicos?</li>
-            <div id="respuesta5" class="respuesta" style="display: none;"></div>
+            <li id="respuesta5" class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(6)" >¿Cómo puedo acceder a mi historial médico en línea?</li>
-            <div id="respuesta6" class="respuesta" style="display: none;"></div>
+            <li id="respuesta6" class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(7)"  >¿Ofrecen atención médica de emergencia las 24 horas?</li>
-            <div id="respuesta7" class="respuesta" style="display: none;"></div>
+            <li id="respuesta7" class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(8)">¿Qué debo hacer si necesito encontrar un médico especialista?</li>
-            <div id="respuesta8" class="respuesta" style="display: none;"></div>
+            <li id="respuesta8" class="respuesta" style="display: none;"></li>
 
             <li onclick="mostrarRespuesta(9)">¿Cuál es el proceso para solicitar autorizaciones de tratamientos médicos?</li>
-            <div id="respuesta9" class="respuesta" style="display: none;"></div>
+            <li id="respuesta9" class="respuesta" style="display: none;"></li>
             
             <li onclick="mostrarRespuesta(10)">¿Qué hacer en caso de pérdida o robo de la credencial de afiliación?</li>
-            <div id="respuesta10" class="respuesta"  style="display: none;"></div>
+            <li id="respuesta10" class="respuesta"  style="display: none;"></li>
         </ul>
        
     
@@ -153,26 +153,27 @@
                 
             ];
     
-             // Función para mostrar la respuesta correspondiente
-        function mostrarRespuesta(indice) {
-            // itero sobre la lista y oculto  todas las respuestas
-            for (let i = 0; i < respuestas.length; i++) {
-                document.getElementById(`respuesta${i+1}`).style.display = 'none';
+            function mostrarRespuesta(indice) {
+                // Itera sobre la lista y oculta todas las respuestas
+                for (let i = 0; i < respuestas.length; i++) {
+                    document.getElementById(`respuesta${i+1}`).style.display = 'none';
+                }
+            
+                // Muestra la respuesta correspondiente
+                const respuesta = document.getElementById(`respuesta${indice}`);
+                respuesta.textContent = respuestas[indice - 1];
+                respuesta.style.display = 'block';
+            
+                // Reinicia el temporizador si existe
+                if (timeoutId) {
+                    clearTimeout(timeoutId);
+                }
+            
+                // Oculta la respuesta después de 6 segundos
+                timeoutId = setTimeout(() => {
+                    respuesta.style.display = 'none';
+                }, 6000);
             }
-
-            const respuesta = document.getElementById(`respuesta${indice}`);
-            respuesta.textContent = respuestas[indice - 1]; 
-            respuesta.style.display = 'block';
-            // vuelvo a cero el contador
-            if (timeoutId) {
-                clearTimeout(timeoutId);
-            }
-
-            // Oculto la respuesta despues de los 6 segundos
-            timeoutId = setTimeout(() => {
-                respuesta.style.display = 'none';
-            }, 6000);
-        }
         </script>
 
 
