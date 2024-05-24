@@ -1707,10 +1707,17 @@ font-size: 1.25rem;
 
 }
 
+.mainMet h1{
+    color: rgb(2, 49, 4);
+text-align: center;
+font-size: 32px;
+padding: 20px;
 
 
+}
 
 
+/* 
 .EncabezadoMetodos h1{
 color: rgb(2, 49, 4);
 text-align: center;
@@ -1718,7 +1725,7 @@ font-size: 32px;
 padding: 20px;
 
 
-}
+} */
 
 .EncabezadoMetodos p{
 font-size: 18px;
