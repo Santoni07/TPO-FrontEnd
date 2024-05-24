@@ -1144,7 +1144,7 @@ transform: scale(1.2);
     display: flex;
     align-items: center;
     background-color: transparent;
-    margin-bottom: 10px; /* Espacio entre el título y el contenido */
+    margin-bottom: 10px; 
     padding: 10px;
 }
 
@@ -1166,7 +1166,7 @@ transform: scale(1.2);
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 10px; /* Espacio inferior entre el texto y el contenido */
+    margin-bottom: 10px;
 }
 
 .ContenedorUbicaciones {
@@ -1392,12 +1392,12 @@ margin-top: 10px;
 }
 
 .payment-section-tilte p {
-    color: #535353; /* Cambia el color del texto */
-    font-size: 32px; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #535353; 
+    font-size: 32px; 
    
-    text-align: center; /* Centra el texto */
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
 
 
@@ -1493,13 +1493,13 @@ margin-left: 30px;
 }
 @media (max-width: 1000px) {
     .grid-container-medico {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 576px) {
     .grid-container-medico {
-        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 }
 /* css para preguntas frecuentes  */
@@ -1684,7 +1684,7 @@ margin-left: 30px;
     height: auto; 
     transition: transform 0.4s; 
     margin:20px;
-   /*  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.1); */
+   
     background-color: transparent;
 }
 
@@ -1715,15 +1715,7 @@ padding: 20px;
 }
 
 
-/* 
-.EncabezadoMetodos h1{
-color: rgb(2, 49, 4);
-text-align: center;
-font-size: 32px;
-padding: 20px;
 
-
-} */
 
 .EncabezadoMetodos p{
 font-size: 18px;
