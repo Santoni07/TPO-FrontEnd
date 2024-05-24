@@ -787,11 +787,7 @@ body.login {
     display: flex;
     min-height: 100vh;
     padding: 0px;
-   
     
-   
-   
-   
 }
 
 
@@ -926,7 +922,7 @@ margin-top: 20px;
 
 .btn-login {
 
-background-color: #807fd9;
+background-color: #007bff;
 font-size: 16px;
 color: white;
 border: none;
@@ -946,9 +942,10 @@ margin: 0 auto;
 
 
 
+
 } 
 .btn button:hover{
-background-color: #5551FF;
+background-color: #0056b3;
 color: white;
 transform: scale(1.2);
 }
