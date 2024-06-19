@@ -100,7 +100,32 @@ function validatePasswordMatch(passwordInput, repeatPasswordInput, errorMessageE
         return true;
     }
 }
+  // Función para validar el formulario de inicio de sesión
+  function validateLoginForm() {
+    let emailInput = document.getElementById("email-login");
+    let passwordInput = document.getElementById("password-login");
 
+    let isEmailValid = validateEmailFormat(emailInput, "email-compare1");
+    let isPasswordValid = validatePasswordLength(passwordInput, 8, "password-length-login");
+
+    return isEmailValid && isPasswordValid;
+}
+
+function validateRegisterForm() {
+    let nameInput = document.getElementById("user-name");
+    let emailInput = document.getElementById("email-register");
+    let passwordInput = document.getElementById("password-input");
+    let repeatPasswordInput = document.getElementById("repeat-password-input");
+    
+
+    let isNameValid = validateRequiredInput(nameInput, "name-compare-register");
+    let isEmailValid = validateEmailFormat(emailInput, "email-compare-register");
+    let isPasswordValid = validatePasswordLength(passwordInput, 8, "password-length-register");
+    let isPasswordMatch = validatePasswordMatch(passwordInput, repeatPasswordInput, "password-compare");
+    
+
+    return isNameValid && isEmailValid && isPasswordValid && isPasswordMatch ;
+}
 // Event listeners para los campos de entrada del formulario de registro manejo del DOM
 document.addEventListener("DOMContentLoaded", function() {
     let nameInput = document.getElementById("user-name");

@@ -31,7 +31,7 @@
       <div class="title">
         <h1>Registrate</h1>
       </div>
-      <form class="form-login" action="./login.html" id="registro-formulario" method="get">
+      <form class="form-login" action="./login.html" id="registro-formulario" method="get" onsubmit="return validateRegisterForm()">
         <div class="input-container">
             <div class="input-container">
                 <input type="text" id="user-name" placeholder="Ingresa tu Nombre" name="name" onblur="validateRequiredInput(this, 'name-compare-register')">
